@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+
+
+body{
+	background-color: rgb(255, 255, 255);
+}
+
+nav{
+	
+	position: absolute;
+	height: 60px;
+	width: 100%;
+	background-color: #FFC100;
+	
+}
+
+nav:hover{
+	background-color: #FEE080;
+}
+nav ul a{
+	
+	margin: 40px;	
+	text-decoration: none;
+	color: #fff;
+		
+}
+
+nav ul li{
+	font-size:20px;
+	display: inline-block;
+	font-family: "inconsolata";
+	margin-top: 20px;
+
+}
+nav ul li:hover{
+	transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	-o-transform: scale(1.3);
+	font-weight: bold;
+}
+.chica{
+	margin-top: 180px;
+	margin-left: 18%;
+}
+
+.saludo{
+	position: absolute;
+	margin-top: -42%;
+	margin-left: 55%;
+	text-align: center;
+}
+
+.oval{
+	position: absolute;
+	width: 340px;
+	height: 120px;
+	-moz-border-radius: 0 50% / 0 100%;
+	-webkit-border-radius: 0 50% / 0 100%;
+	border-radius: 0 50% / 0 100%;
+	background: #FEE080;
+	border: 3px solid #fff;
+}
+
+h1{
+	margin-top: -60%;
+	font-size: 28px;
+	font-family: "inconsolata";
+}
+h2{
+	font-size: 49px;
+	font-family: "inconsolata";
+}
+h3{
+	font-family: "inconsolata";
+	font-size: 23px;
+}
+h4{
+	position: absolute;
+	font-size: 40px;
+	font-family: "inconsolata";
+	color: rgb(255, 255, 255);
+	margin-top: 38px ;
+	margin-left: 60px;
+}
+
+
+.social {
+	position: fixed; 
+	left: 0; 
+	top: 200px; 
+	z-index: 2000; }
+
+	.social ul {
+		list-style: none;
+	}
+
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 20px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+
+	.social ul li .icon-github {color: #000; background:#ffffff;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-linkedin {color: #0068f0; background-color: #fff;}
+	.social ul li .icon-instagram {color: rgb(199, 5, 134); background: #fff;}
+	.social ul li .icon-facebook {color: #328ed9; background: #fff;}
+	.social ul li .icon-whatsapp {color: #18ae38; background: #fff;}
+
+	.social ul li a:hover {
+		color: #FFf;
+		background: #FFC100; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 20px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+
+
+	
+	.fq{
+		background: #FFC100;
+		width: 100%;
+		height: 530px;
+		margin-top: 6%;
+	}
+
+	p{
+		font-family: "inconsolata";
+		font-size: 25px;
+		color: #fff;
+		margin-left: 20px;
+		padding: 75px;
+		width: 600px;
+		height: auto;
+		text-align: justify;
+	}
+
+	.tecnologias{
+	position: absolute;
+		margin-left: 56%;
+		margin-top: 5%;
+	}
+
+	
+	.poke{
+        margin: 25px;
+		margin-top: 30px;
+		width: 300;
+		height: auto;
+		border-radius: 20px;
+	}
+
+	h5{
+		padding: 25px;
+		color: #fff;
+		font-size: 35px;
+		text-align: center;
+	}
+	.wrap{
+		width: 1100px;
+		margin: 50px auto;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	
+	.tarjeta-wrap{
+		margin: 30px;
+		-webkit-perspective: 800;
+		perspective: 800;
+	}
+	
+	.tarjeta{
+		width: 400px;
+		height: 450px;
+		background: #FFC100;
+		border-radius: 20px;
+		position: relative;
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		-webkit-transition: .7s ease;
+		transition: .7s ease;
+		-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+		box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+	
+	}
+	
+	.adelante, .atras{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+	
+	.adelante{
+		width: 100%;
+	}
+	
+	.atras{
+		-webkit-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	
+		padding: 15px;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+	
+		text-align: center;	
+	  background: #Fff;
+	  border-radius: 20px;
+	  border: #FEE080 2px solid;
+	}
+
+	h5{
+		width: 200px;
+		height: auto;
+		text-align: center;
+		color: #ffffff;
+		font-family: "inconsolata";
+		font-size: 35px;
+		margin-left: 18%;
+	}
+	
+	.tarjeta-wrap:hover .tarjeta{
+		-webkit-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+	
+footer
+{
+	padding: 20px;
+	background-color: rgb(71, 71, 71);
+	text-align: center;
+	color: #fff;
+}
